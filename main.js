@@ -31,7 +31,12 @@ function got_Result(error,result){
        console.log(result);
     Name1=result[0].label;
        document.getElementById("name1").innerHTML= Name1;
-
-
-   }
+       if (Name1 == "amazing"){
+        document.getElementById("emoji1").innerHTML="👌🏻"; 
+    }
+    if (Name1 == "best"){
+     document.getElementById("emoji1").innerHTML="👍🏻"; 
+ }
+ if (Name1 == "victory"){
+     document.getElementById("emoji1").innerHTML="✌🏻";}
 }
